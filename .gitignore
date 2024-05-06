@@ -1,4 +1,33 @@
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+# macOS system files
+.DS_Store
+
+# Node.js dependencies
+node_modules/
+
+# Build output directories
+/build/
+/dist/
+/out/
+
+# SvelteKit files
+/.svelte-kit
+
+# Package files
+/package
+
+# IDE/editor-specific files
+/.vscode
+/.idea
+/shelf/
+/workspace.xml/
+# Environment files
+.env
+.env.*
+
+# Vite config files
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# VitePress cache
+docs/.vitepress/dist
+docs/.vitepress/cache
