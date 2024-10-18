@@ -1,0 +1,15 @@
+@use 'sass:math';
+
+@function brightness($color) {
+  $red-weight: 0.299;
+  $green-weight: 0.587;
+  $blue-weight: 0.114;
+
+  $red: red($color);
+  $green: green($color);
+  $blue: blue($color);
+
+  $brightness: ($red * $red-weight) + ($green * $green-weight) + ($blue * $blue-weight);
+
+  @return math.div($brightness, 255) * 100%;
+}
